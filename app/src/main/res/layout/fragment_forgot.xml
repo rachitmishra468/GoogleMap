@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:id="@+id/coordinat"
+    android:fitsSystemWindows="true">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="top"
+            android:background="@color/notification_background"
+          >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/mail_outlineyellow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Forgot Your Password ?"
+                android:gravity="center"
+                android:fontFamily="@fonts/aaa"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/forgot_password_two"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:fontFamily="@fonts/aaa"
+                android:textColor="@color/colorAccent"
+                />
+            <EditText
+                android:id="@+id/Forgot_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableBottom="@color/log_in"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="5dp"
+                android:paddingLeft="5dp"
+                android:hint="Email"
+                android:layout_margin="10dp"
+                android:background="@drawable/uploadimagsbackground"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <Button
+                android:id="@+id/Forgotbtn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:padding="5dp"
+                android:text="SUBMIT"
+                android:fontFamily="@fonts/aaa"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

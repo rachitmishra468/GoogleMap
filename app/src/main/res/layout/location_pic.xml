@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:id="@+id/location_pic"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <EditText
+                android:id="@+id/txt_search_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:hint="Search.."
+                android:paddingLeft="5dp"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/large_text"
+                android:typeface="sans" />
+            <ImageView
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:id="@+id/search_icon"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:background="@android:color/transparent"
+            >
+
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="5">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:text="Select Distance "
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:id="@+id/select_text"
+                android:paddingLeft="5dp"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/large_text"
+                android:typeface="sans" />
+
+            <Spinner
+                android:id="@+id/distance_spinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:popupBackground="@color/colorPrimaryDark"
+                />
+          <!--  <Spinner
+            android:id="@+id/distance_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+                android:background="@color/white"
+            android:popupBackground="@color/colorAccent"
+            />-->
+          <!--  <ImageView
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/drop_down"/>-->
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

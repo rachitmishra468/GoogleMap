@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#29162E</color>
+    <color name="colorPrimaryDark">#0E0210</color>
+    <color name="action_bar">#29162E</color>
+    <color name="colorAccent">#E9B333</color>
+    <color name="sign_in">#DB8E2B</color>
+    <color name="log_in">#E9B333</color>
+    <color name="white">#ffffff</color>
+    <color name="hint_text">#c4c4c4</color>
+    <color name="black">#000000</color>
+    <color name="text_code">#737373</color>
+    <color name="notification_background">#1e000000</color>
+    <color name="red">#ae0101</color>
+    <color name="green">#026b01</color>
+    <color name="shimmer_background_color">#b1b1b1</color>
+    <color name="running">#2083fa</color>
+</resources>

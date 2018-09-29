@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="invitation_mode_arr">
+        <item>Invitation Mode</item>
+        <item>Atomuatic</item>
+        <item>Custom</item>
+
+    </string-array>
+    <string-array name="planets_array">
+        <item>Post Type</item>
+        <item>Single</item>
+        <item>Multi</item>
+
+    </string-array>
+    <string-array name="group_type">
+        <item>Group Type</item>
+        <item>Open</item>
+        <item>Close Group</item>
+        <item>State</item>
+        <item>Country</item>
+        <item>Sponsored</item>
+    </string-array>
+    <string-array name="distance">
+        <item>Select Distance</item>
+        <item>10 km</item>
+        <item>20 km</item>
+        <item>30 km</item>
+        <item>40 km</item>
+        <item>50 km</item>
+        <item>60 km</item>
+    </string-array>
+    <string-array name="step_type">
+        <item>Steps</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+</resources>

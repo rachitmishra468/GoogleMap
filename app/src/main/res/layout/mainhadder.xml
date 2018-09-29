@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+  android:orientation="horizontal"
+    android:layout_height="?actionBarSize">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:weightSum="5"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/xxlarge_text"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:weightSum="1"
+            android:id="@+id/notification_layout"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/notification"
+                >
+
+                <LinearLayout
+                    android:id="@+id/notification_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/notifications_yemllow"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/notification_count"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:background="@drawable/notification_text_background"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="List"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xxlarge_text"
+            android:layout_gravity="right|center"
+            android:id="@+id/toolbar_list" />
+    </LinearLayout>
+</LinearLayout>

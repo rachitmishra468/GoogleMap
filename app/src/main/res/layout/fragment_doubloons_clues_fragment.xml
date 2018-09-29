@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    android:background="@drawable/background"
+    tools:context="com.media_mosaic.httpwww.doubloons.Fragments.Doubloons_clues_fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:scrollIndicators="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/whiteborder"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="@string/clues"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/clues_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_text" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/add_detail_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/add_detail_sceound"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/green_nav_lag"
+        android:visibility="visible" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="35dp"
+        android:editable="false"
+        android:enabled="false"
+        android:gravity="bottom|center"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/copy_right"
+        android:textColor="@color/text_code"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/min_small_text" />
+</FrameLayout>

@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_marginTop="?actionBarSize"
+    tools:context="com.media_mosaic.httpwww.doubloons.Fragments.Mydoubloons">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swifeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="9">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_doublloon_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_new_Doubloon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/swifeRefresh"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp"
+            android:elevation="20dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/add_new_doubloon_layour"
+            android:gravity="top"
+            android:layout_margin="15dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_doubloon_img"
+                android:src="@drawable/add_new_doubloon" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

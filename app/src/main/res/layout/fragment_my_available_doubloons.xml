@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/notification_background"
+    android:layout_marginTop="?actionBarSize"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.media_mosaic.httpwww.doubloons.Fragments.MyAvailableDoubloonsFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@drawable/uploadimagsbackground"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/xxlarge_text"
+            android:text="Available Doubloons"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/mydoubloons__recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="10"/>
+
+    </LinearLayout>
+</LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:backgroundTint="@color/colorAccent"
+    android:text="ADD DOUBLOON"
+    android:id="@+id/add_doubloon_but"
+    android:gravity="center"/>
+
+
+
+
+
+</LinearLayout>

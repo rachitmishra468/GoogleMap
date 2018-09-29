@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "311300475556",
+    "project_id": "firebase-doubloons"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311300475556:android:85ba6fc1d8572a4c",
+        "android_client_info": {
+          "package_name": "com.media_mosaic.httpwww.doubloons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311300475556-v94u2qtvgl2l10g40p5egft2avmtab6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.media_mosaic.httpwww.doubloons",
+            "certificate_hash": "62c12c4a30f56dbc79fb3fc5315877566abaa711"
+          }
+        },
+        {
+          "client_id": "311300475556-at22b2tmqb1mdoi3gv4assl8j6tmn42v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7yrrOOUZRilkPZr5UZuk864FzOCZR7ZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

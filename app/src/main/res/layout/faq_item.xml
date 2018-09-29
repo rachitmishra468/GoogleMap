@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_setdata"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/uploadimagsbackground"
+            android:weightSum="10"
+            android:id="@+id/show_faq"
+            android:minWidth="300dp"
+           >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:layout_margin="2dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/dote_yellow"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="8"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:id="@+id/textViewTitle"
+                    android:minWidth="320dp"
+                    android:text="@string/faq_one"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/drop_down"
+                android:id="@+id/show_hide_data"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/faq_data"
+            android:visibility="gone"
+            android:background="@color/notification_background"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:id="@+id/textViewShortDesc"
+                android:gravity="left"
+                android:padding="2dp"
+                android:text="@string/faq_one_data"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

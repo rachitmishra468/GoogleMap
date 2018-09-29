@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableBottom="@color/colorAccent"
+    android:drawableLeft="@drawable/interest_icon"
+    android:drawablePadding="10dp"
+    android:hint="@string/country"
+    android:inputType="text"
+    android:textSize="@dimen/xlarge_text"
+    android:paddingLeft="3dp"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white" />

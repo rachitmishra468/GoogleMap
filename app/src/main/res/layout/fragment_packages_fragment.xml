@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    android:background="@drawable/background"
+    android:clickable="true"
+    tools:context="com.media_mosaic.httpwww.doubloons.Fragments.Packages_fragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollIndicators="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:gravity="center_horizontal"
+            android:paddingRight="24dp"
+            android:layout_marginBottom="50dp"
+            android:paddingTop="56dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xxlarge_text"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scrollIndicators="none"
+                android:scrollbars="horizontal"
+                android:textColor="@color/colorAccent"
+                android:text="Starter Package"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:scrollIndicators="none"
+                android:scrollbars="horizontal"
+                android:textColor="@color/white"
+                android:text="@string/demo_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xxlarge_text"
+                android:textStyle="normal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scrollIndicators="none"
+                android:scrollbars="horizontal"
+                android:textColor="@color/white"
+                android:text="Number of post: 40 "/>
+
+            <Button
+                android:id="@+id/partner_login"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:text="BUY NOW "
+                android:backgroundTint="@color/log_in"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_code"
+                android:editable="false"
+                android:enabled="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/small_text"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/copy_right"
+                android:textColorHint="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,128 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/addTaskNameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/card_element_margin"
+        android:layout_marginStart="@dimen/card_element_margin"
+        android:layout_marginTop="@dimen/card_element_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minLines="10"
+            android:id="@+id/more_data_edit"
+            android:layout_gravity="top|left"
+            android:gravity="top|left"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/xlarge_text"
+            android:hint="Enter Text"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/notification_background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:elevation="30dp"
+    android:layout_margin="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minLines="10"
+        android:id="@+id/more_data_edit"
+        android:layout_gravity="top|left"
+        android:gravity="top|left"
+        android:textColorHint="@color/colorPrimary"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/xlarge_text"
+        android:hint="Enter Text"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="right|center"
+        android:gravity="right|center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCLE"
+            android:id="@+id/cancle_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/xxlarge_text"
+            android:textColor="@color/green"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/ok_text"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/xxlarge_text"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>-->

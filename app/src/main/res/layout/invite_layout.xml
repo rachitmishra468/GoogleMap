@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/text_code"
+     >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:layout_margin="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="5">
+            <Spinner
+            android:id="@+id/invitation_mode"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@color/colorAccent"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+
+        android:weightSum="5">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/email_icon"
+                android:hint="@string/email"
+                android:id="@+id/editTextView"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:theme="@style/MyEditTextTheme" />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/password_icon"
+                android:hint="@string/password"
+                android:id="@+id/passTextView"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:theme="@style/MyEditTextTheme" />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Add"
+        android:id="@+id/imgViewAdd"
+        android:textColor="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+   <Button
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/colorAccent"
+       android:text="Send Invitation"
+       android:id="@+id/send_Invitaion_button"
+       android:textColor="@color/colorPrimary"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Cancle"
+        android:id="@+id/cancle_button"
+        android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:dividerHeight="2dp" >
+
+    </ListView>
+    </LinearLayout>
+</LinearLayout>

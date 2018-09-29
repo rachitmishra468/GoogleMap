@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    >
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginTop="2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="5"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/notification_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Starter Package "
+                    android:textSize="@dimen/large_text"
+                    android:gravity="center|left"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1.4"/>
+                <TextView
+                    android:id="@+id/notification_dis"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
+                    android:textSize="@dimen/medium_text"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_code"
+                    android:layout_weight="2.6"/>
+                <TextView
+                    android:id="@+id/notification_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1.5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="visible"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorAccent" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/hint_text" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
